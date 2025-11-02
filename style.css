@@ -21,6 +21,11 @@ body {
     text-align: center;
 }
 
+.container h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
 .flex {
     display: flex;
 }
@@ -138,7 +143,7 @@ input[type="text"] {
     width: 70%;
     display: flex;
     flex-direction: column;
-    align-items: center; /* center child elements horizontally */
+    align-items: center;
     text-align: center;
 }
 
@@ -267,11 +272,10 @@ input[type="text"] {
   font-size: 16px;
   color: black;
   text-align: center;
-  grid-column: 1 / -1; /* span full grid */
+  grid-column: 1 / -1; 
   margin: 20px 0;
 }
 
-/* Grid layout for user recipes */
 #user-recipes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -282,7 +286,6 @@ input[type="text"] {
   max-width: 1000px;
 }
 
-/* Individual recipe box (same style as API meals) */
 #user-recipes .meal {
   background: #fff;
   border-radius: 10px;
@@ -306,7 +309,7 @@ input[type="text"] {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* dark semi-transparent overlay */
+  background-color: rgba(0, 0, 0, 0.5); 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -319,19 +322,19 @@ input[type="text"] {
 }
 
 #user-recipes .meal-info h3 {
-  color: white; /* recipe name text */
+  color: white; 
   font-size: 16px;
   text-align: center;
   padding: 5px;
 }
 
 #user-recipes-list .user-recipe img {
-  width: 300px;       /* fixed width */
-  height: 300px;      /* fixed height */
+  width: 300px;       
+  height: 300px; 
   border: 4px solid black;
   border-radius: 5px;
-  object-fit: cover;  /* keeps the image from stretching */
-  margin: 15px auto;  /* centers the image */
+  object-fit: cover;  
+  margin: 15px auto; 
   display: block;
 }
 

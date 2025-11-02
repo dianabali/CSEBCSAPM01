@@ -1,6 +1,8 @@
+// Handle adding a new recipe
 document.addEventListener('DOMContentLoaded', () => {
   const recipeForm = document.getElementById('recipe-form');
 
+  // Submit new recipe
   recipeForm.addEventListener('submit', e => {
     e.preventDefault();
     console.log('Form submitted');

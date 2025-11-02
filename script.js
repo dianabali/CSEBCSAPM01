@@ -48,6 +48,7 @@ function searchMeal(e) {
 
 }
 
+// Load meal categories into dropdown
 function loadCategories() {
     fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
         .then(res => res.json())
@@ -61,11 +62,13 @@ function loadCategories() {
         });
 }
 
+// Initial load
 document.addEventListener('DOMContentLoaded', () => {
     renderFavorites();
     loadCategories();
 });
 
+// Filter meals by category
 categorySelect.addEventListener('change', e => {
     const category = e.target.value;
     if(category) {
@@ -213,6 +216,7 @@ function removeFavorite(idMeal) {
     renderFavorites();
 }
 
+// Render favorites list
 function renderFavorites() {
     const favorites = getFavorites();
     if(favorites.length === 0) {
@@ -248,6 +252,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderFavorites();
 });
 
+// Render user-added recipes
 function renderUserRecipes() {
   const recipes = JSON.parse(localStorage.getItem('userRecipes')) || [];
   const container = document.getElementById('user-recipes');
@@ -355,6 +360,7 @@ mealsEl.addEventListener('click', e => {
     }
 });
 
+// Handle clicks on user-added recipes
 userRecipesList.addEventListener('click', e => {
   const mealInfo = e.target.closest('.meal-info');
   const deleteBtn = e.target.closest('.user-recipe-btn');
