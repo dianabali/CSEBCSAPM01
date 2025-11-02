@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <title>Recipe App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe App</h1>
+        <div class="flex">
+            <form class="flex" id="submit">
+                <input type="text" id="search" placeholder="Search for recipes or enter a keyword">
+                <button class="search-btn" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+
+            <select id="category-select">
+                <option value="">Browse by Category</option>
+            </select>
+
+            <button class="random-btn" id="random">
+                <i class="fas fa-random"></i>
+            </button>
+        </div>
+
+        <div class="create-recipe-btn">
+            <a href="./add-recipe/add-recipe.html"> Create Your Own Recipe</a>
+        </div>
+
+        <div id="result-heading"></div>
+        <div id="meals" class="meals"></div>
+        <div id="single-meal"></div>
+
+        <div id="favorites-container">
+            <h2>Your Favorite Recipes</h2>
+            <div id="favorites" class="meals"></div>
+        </div>
+
+        <section id="user-recipes-section">
+            <h2>My Recipes</h2>
+            <div id="user-recipes" class="meals-container"></div>
+        </section>
+
+        <div id="about-section">
+            <h2>About This App</h2>
+            <br>
+            <p>Recipe App was created by <strong>me</strong> as part of the project report for
+                <em>"Project: Agile Project Management"</em>.</p>
+            <p>It’s a fun way to explore, create, and save your favorite recipes. 
+                Browse by keyword, get random meals, or filter by category.</p>
+            <p>Happy cooking! 🍳❤️</p>
+            <br>
+            <p style="font-size: 10px;">&copy; 2024 Recipe App / <i>Diana Bali</i></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

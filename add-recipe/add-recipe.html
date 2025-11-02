@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add-recipe.css">
+    <title>Add a recipe</title>
+</head>
+<body>
+    <header>
+        <h1>Add Your Own Recipe</h1>
+        <a href="index.html" class="back-btn">← Back to Home</a>
+    </header>
+
+    <section id="create-recipe">
+        <form id="recipe-form">
+        <label for="recipe-name">Recipe Name:</label>
+        <input type="text" id="recipe-name" required>
+
+        <label for="recipe-desc">Description:</label>
+        <textarea id="recipe-desc" rows="3" required></textarea>
+
+        <label for="recipe-ingredients">Ingredients (comma separated):</label>
+        <textarea id="recipe-ingredients" rows="3" required></textarea>
+
+        <label for="recipe-image">Upload Image:</label>
+        <input type="file" id="recipe-image" accept="image/*" required>
+
+        <button type="submit">Save Recipe</button>
+        </form>
+    </section>
+
+  <script src="add-recipe.js"></script>
+</body>
+</html>
