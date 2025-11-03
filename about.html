@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About This App</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: aqua;
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .about-container {
+      max-width: 800px;
+      margin: 60px auto;
+      background-color: #f9f9f9;
+      padding: 30px;
+      border-radius: 10px;
+      border: 2px dashed black;
+      text-align: center;
+    }
+
+    .about-container h1 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .about-container p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    .about-container a.back-btn {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .about-container a.back-btn:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 13px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="about-container">
+    <h1>About Recipe App</h1>
+    <p><strong>Recipe App</strong> was created as part of the <em>“Project: Agile Project Management”</em> course at university. 
+      It was developed to demonstrate agile practices while creating a real-world, interactive web application.</p>
+
+    <p>The app allows users to explore a variety of meals, browse by category, save favorites, and even create their own recipes 
+      with images and ingredients. It integrates with <a href="https://www.themealdb.com/" target="_blank">TheMealDB API</a> to 
+      fetch and display meal data dynamically.</p>
+
+    <p>Throughout the development process, agile methodologies such as iterative testing, sprint-based planning, and user story 
+      implementation were applied to improve adaptability and efficiency.</p>
+
+    <p>Created with ❤️ by <strong>Diana Bali</strong></p>
+
+    <a href="index.html" class="back-btn">← Back to Home</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Recipe App — All rights reserved.</p>
+  </footer>
+</body>
+</html>
