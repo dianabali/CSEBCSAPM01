@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
       recipes.push(newRecipe);
       localStorage.setItem('userRecipes', JSON.stringify(recipes));
 
-      alert('Recipe added successfully!');
       recipeForm.reset();
       window.location.href = 'index.html';
     };
