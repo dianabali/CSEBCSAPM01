@@ -148,7 +148,7 @@ input[type="text"] {
 .single-meal img {
     width: 300px;
     margin: 15px;
-    border: 4px solid white;
+    border: 4px solid black;
     border-radius: 5px;
 }
 
@@ -173,7 +173,7 @@ input[type="text"] {
 .single-meal ul li {
     border: 1px solid green;
     border-radius: 5px;
-    background-color: yellow;
+    background-color: rgb(238, 238, 82);
     display: inline-block;
     color: black;
     font-size: 12px;
@@ -218,7 +218,7 @@ input[type="text"] {
 }
 
 #save-fav {
-    background-color: #ff6b6b;
+    background-color: #3e3e3e;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -231,7 +231,7 @@ input[type="text"] {
 }
 
 #save-fav:hover {
-    background-color: #ff4c4c;
+    background-color: #3e3e3e;
     transform: scale(1.05); 
 }
 
@@ -241,7 +241,7 @@ input[type="text"] {
 }
 
 .create-recipe-btn a {
-  background-color: #007bff;
+  background-color: #106951;
   color: white;
   text-decoration: none;
   padding: 12px 25px;
@@ -251,10 +251,9 @@ input[type="text"] {
 }
 
 .create-recipe-btn a:hover {
-  background-color: #0056b3;
+  background-color: #083a2d;
 }
 
-/* Section title styling */
 #user-recipes-section {
   margin-top: 40px;
   text-align: center;
@@ -262,7 +261,7 @@ input[type="text"] {
 
 #user-recipes-section h2 {
   margin-bottom: 20px;
-  color: #333;
+  color: black;
 }
 
 #user-recipes p {
@@ -284,7 +283,6 @@ input[type="text"] {
 }
 
 #user-recipes .meal {
-  background: #fff;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
