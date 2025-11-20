@@ -70,6 +70,7 @@ input[type="text"] {
     color: white;
     cursor: pointer;
     overflow: hidden;
+    border: 1px solid black;
 }
 
 #category-select option {
